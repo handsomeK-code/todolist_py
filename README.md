@@ -1,2 +1,2 @@
-Python todoList\n
+Python todoList.  
 project to learn more about python
