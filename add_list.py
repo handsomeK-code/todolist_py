@@ -1,6 +1,6 @@
 from datetime import datetime
 
-def addList () -> dict:
+def addList (tasks:list) -> list:
     new_task = dict()
     description = input('Name of the task: ')
     #setid
@@ -17,4 +17,5 @@ def addList () -> dict:
     new_task['createdAt'] = datetime.now().strftime("%Y-%m-%d %H:%M%S")
     #updatedtime
     new_task['updatedAt'] = datetime.now().strftime("%Y-%m-%d %H:%M%S")
-    return new_task
+    tasks.append(new_task)
+    return tasks
