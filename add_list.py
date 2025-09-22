@@ -1,6 +1,6 @@
 from datetime import datetime
 
-def addList (tasks:list) -> list:
+def addList (tasks:dict) -> dict:
     new_task = dict()
     description = input('Name of the task: ')
     #setid

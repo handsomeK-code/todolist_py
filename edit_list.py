@@ -1,4 +1,4 @@
-def editTask (tasks:list) -> list:
+def editTask (tasks:dict) -> dict:
     if not tasks:
         return print("you have no todo task right now! Please add a new list")
     print((task['description'] for task in tasks ))
