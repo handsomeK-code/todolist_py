@@ -15,4 +15,6 @@ def addList () -> dict:
     new_task['status'] = 'todo'
     #createdtime
     new_task['createdAt'] = datetime.now().strftime("%Y-%m-%d %H:%M%S")
-    
+    #updatedtime
+    new_task['updatedAt'] = datetime.now().strftime("%Y-%m-%d %H:%M%S")
+    return new_task
