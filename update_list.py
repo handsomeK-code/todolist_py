@@ -9,9 +9,11 @@ def updateList (tasks:dict) -> dict:
     if progress_type == 0:
         tasks[task_name]['status'] = 'todo'
         return tasks
+    #change to in-progress
     elif progress_type == 1:
         tasks[task_name]['status'] = 'in-progress'
         return tasks
+    #change to done
     elif progress_type == 2:
         tasks[task_name]['status'] = 'done'
         return tasks
