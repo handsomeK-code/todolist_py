@@ -17,5 +17,5 @@ def addList (tasks:list) -> list:
     new_task['createdAt'] = datetime.now().strftime("%Y-%m-%d %H:%M%S")
     #updatedtime
     new_task['updatedAt'] = datetime.now().strftime("%Y-%m-%d %H:%M%S")
-    tasks.append(new_task)
+    tasks[new_task['description']] = new_task
     return tasks
