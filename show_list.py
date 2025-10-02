@@ -1,4 +1,4 @@
-def showList (tasks) -> dict:
+def showList (tasks) :
     #check tasks empty or not
     if not tasks:
         return print('you dont have any task right now! please make one!')
@@ -13,3 +13,4 @@ def showList (tasks) -> dict:
     #show done
     if choose_progress == 3:
         print((done for done in tasks))
+    return True
